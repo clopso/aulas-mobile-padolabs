@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/FechaduraIMGLayout"
+        android:layout_width="410dp"
+        android:layout_height="297dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/FechaduraIMG"
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:contentDescription="Fechadura FDE-600W"
+            app:srcCompat="@drawable/fde600w_grande" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TXTLayout"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FechaduraIMGLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/FDE600WTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:capitalize="none"
+            android:minHeight="32sp"
+            android:text="FDE-600W"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/FDE600WDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FECHADURA DIGITAL DE EMBUTIR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FDE600WCarac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/FDE5800WCarac1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/WaterProofLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/WaterProofIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_agua" />
+
+                <TextView
+                    android:id="@+id/WaterProofTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resistente à água"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AlexaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/AlexaIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_alexa" />
+
+                <TextView
+                    android:id="@+id/AlexaTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Compatível com Alexa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FDE5800WCarac2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/WifiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/WifiIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_wifi" />
+
+                <TextView
+                    android:id="@+id/WifiTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acesso remoto via wi-fi"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BioLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/BioIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_biometria" />
+
+                <TextView
+                    android:id="@+id/BioTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Leitor Biométrico"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FDE5800WCarac3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/NumPadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/NumPadIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_teclado" />
+
+                <TextView
+                    android:id="@+id/NumPadTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teclado numérico"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+                <ImageView
+                    android:id="@+id/CardIMG"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_cartao" />
+
+                <TextView
+                    android:id="@+id/CardTXT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acesso por cartão"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BuyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar agora"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

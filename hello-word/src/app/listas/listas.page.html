@@ -1,0 +1,52 @@
+<ion-toolbar>
+  <div class="header">
+    <img src="../../assets/PadoLabsLogo.png" alt="PadoLabsLogo" width="auto" height="78px">
+  </div>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="/home">Home</ion-breadcrumb>
+    <ion-breadcrumb href="/cidades">Cidades</ion-breadcrumb>
+    <ion-breadcrumb href="/listas">Listas</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <ion-card>
+    <img src="../../assets/cidades/londrina.png" />
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>Londrina, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Londrina é um município brasileiro localizado no estado do Paraná, na Região Sul do Brasil, distando 381 km da
+      capital paranaense, Curitiba. É considerada pela CGU a cidade mais transparente do Paraná.
+    </ion-card-content>
+    <ion-button expand="block" (click)="goToPageLondrina()">Visualizar cidade</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/cidades/curitiba.png" />
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>Curitiba, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Curitiba é a capital do estado do Paraná, na região sul do Brasil. A Torre Panorâmica, que tem um observatório em
+      sua parte superior, destaca-se na silhueta da cidade.
+    </ion-card-content>
+    <ion-button expand="block">Visualizar cidade</ion-button>
+  </ion-card>
+
+  <ion-card>
+    <img src="../../assets/cidades/maringa.png" />
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>Maringá, PR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Maringá é um município brasileiro do estado do Paraná, sendo uma cidade média-grande planejada e de urbanização
+      recente.
+    </ion-card-content>
+    <ion-button expand="block">Visualizar cidade</ion-button>
+  </ion-card>
+</ion-content>

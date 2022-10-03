@@ -1,0 +1,89 @@
+#container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+ion-toolbar {
+    --background: #19133E;
+
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+    margin: 0;
+}
+
+ion-breadcrumbs {
+    margin: 10px 10px 0 10px;
+    font-size: 15px;
+}
+
+ion-card {
+    --background: white;
+    --color: black;
+}
+
+ion-card-subtitle {
+    --color: black;
+}
+
+ion-card-title {
+    --color: black;
+}
+
+:root {
+    --ion-color-rose: #fecdd3;
+    --ion-color-rose-rgb: 254, 205, 211;
+    --ion-color-rose-contrast: #000000;
+    --ion-color-rose-contrast-rgb: 0, 0, 0;
+    --ion-color-rose-shade: #e0b4ba;
+    --ion-color-rose-tint: #fed2d7;
+}
+
+.ion-color-rose {
+    --ion-color-base: var(--ion-color-rose);
+    --ion-color-base-rgb: var(--ion-color-rose-rgb);
+    --ion-color-contrast: var(--ion-color-rose-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rose-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rose-shade);
+    --ion-color-tint: var(--ion-color-rose-tint);
+}
+
+div[slot="content"] {
+    background: rgba(var(--ion-color-rose-rgb), 0.25)
+}
+
+.ion-padding {
+    color: white;
+}
